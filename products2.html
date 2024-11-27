@@ -6,7 +6,7 @@
     <meta name="description" content="View our products and add to cart or just browse">
     <meta name="keywords" content="shopping,products,catelog, shop">
   <title>Our Collection - Your Jewelry Shop</title>
-  <link rel="stylesheet" href="products_styles.css"> <!-- Link to specific styles for products page -->
+  <link rel="stylesheet" href="products_styles.css"> 
     <script src="cart.js"></script>
 
 </head>
@@ -29,22 +29,17 @@
     </nav>
   </header>
 
-    <!-- Title Section -->
+   
 <section class="title-section">
     <div class="title-content">
-        <!-- Logo Image (optional) -->
         <img src="https://i.imgur.com/J5TYXOS.png" referrerpolicy="no-referrer"alt="Tribal Surf Style Logo" class="title-logo">
 
-        <!-- Page Title -->
         <h1 class="page-title">WoodBurned Collection</h1>
 
-        <!-- Site Name -->
         <p class="site-name">TribalSurfStyle</p></section>
 
 
-  <!-- Products Grid -->
   <div class="products-grid">
-    <!-- Example Product Listing 1 -->
     <div class="product">
       <img src="https://i.imgur.com/ktZDUFe.jpeg" referrerpolicy="no-referrer" alt="Surfer On Beach">
       <h3>Surfer Kid On the Beach</h3>
@@ -57,7 +52,6 @@
     </div>
 
         
-    <!-- Example Product Listing 2 -->
     <div class="product">
       <img src="https://i.imgur.com/qgMoK98.jpeg" referrerpolicy="no-referrer" alt="Iconic Seaside View">
       <h3>Iconic Seaside View</h3>
@@ -97,13 +91,11 @@
 
   <script src="cart.js"></script>
   <script>
-    // View Details Button Functionality
     document.querySelectorAll(".view-details-btn").forEach(button => {
       button.addEventListener("click", () => {
         const description = button.previousElementSibling;
         description.classList.toggle("show");
 
-        // Update button text
         button.textContent = description.classList.contains("show")
           ? "Hide Details"
           : "View Details";
