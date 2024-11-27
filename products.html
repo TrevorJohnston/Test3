@@ -33,22 +33,16 @@
     
     
     
-     <!-- Title Section -->
 <section class="title-section">
     <div class="title-content">
-        <!-- Logo Image (optional) -->
         <img src="https://i.imgur.com/J5TYXOS.png" referrerpolicy="no-referrer" alt="Tribal Surf Style Logo" class="title-logo">
 
-        <!-- Page Title -->
         <h1 class="page-title">Necklaces and Bracelets</h1>
 
-        <!-- Site Name -->
         <p> class="site-name">TribalSurfStyle</p> </section>
     
    
-  <!-- Products Grid -->
   <div class="products-grid">
-    <!-- Example Product Listing 1 -->
     <div class="product">
       <img src="https://i.imgur.com/mIWdYZj.jpeg" referrerpolicy="no-referrer" alt="Triple Pearl Classic">
       <h3>Multi Stone Bracelet</h3>
@@ -61,7 +55,6 @@
       
     </div>
 
-    <!-- Example Product Listing 2 -->
     <div class="product">
       <img src="https://i.imgur.com/SoDoeK4.jpeg" referrerpolicy="no-referrer" alt="Natural Stone Bracelet">
       <h3>Waterfall White Pearl Necklace</h3>
@@ -100,13 +93,11 @@
 
   <script src="cart.js"></script>
   <script>
-    // View Details Button Functionality
     document.querySelectorAll(".view-details-btn").forEach(button => {
       button.addEventListener("click", () => {
         const description = button.previousElementSibling;
         description.classList.toggle("show");
 
-        // Update button text
         button.textContent = description.classList.contains("show")
           ? "Hide Details"
           : "View Details";
