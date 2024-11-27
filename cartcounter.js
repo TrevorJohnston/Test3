@@ -9,7 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Call updateCartCounter to ensure the counter is accurate on page load
     updateCartCounter();
 });
 
