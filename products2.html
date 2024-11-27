@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View our products and add to cart or just browse">
+    <meta name="keywords" content="shopping,products,catelog, shop">
+  <title>Our Collection - Your Jewelry Shop</title>
+  <link rel="stylesheet" href="products_styles.css"> <!-- Link to specific styles for products page -->
+    <script src="cart.js"></script>
+
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="products.html">Our Collection</a>
+          <ul class="dropdown-content">
+            <li><a href="products2.html">Woodburning</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="custom.html">Custom Order</a></li>
+        <li><a href="cart.html" class="cart">Cart (0)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <!-- Title Section -->
+<section class="title-section">
+    <div class="title-content">
+        <!-- Logo Image (optional) -->
+        <img src="https://i.imgur.com/J5TYXOS.png" referrerpolicy="no-referrer"alt="Tribal Surf Style Logo" class="title-logo">
+
+        <!-- Page Title -->
+        <h1 class="page-title">WoodBurned Collection</h1>
+
+        <!-- Site Name -->
+        <p class="site-name">TribalSurfStyle</p></section>
+
+
+  <!-- Products Grid -->
+  <div class="products-grid">
+    <!-- Example Product Listing 1 -->
+    <div class="product">
+      <img src="https://i.imgur.com/ktZDUFe.jpeg" referrerpolicy="no-referrer" alt="Surfer On Beach">
+      <h3>Surfer Kid On the Beach</h3>
+      <p>Wood Ring with handburned surfer</p>
+      <p><strong>Price:</strong> $15.00</p>
+      <button onclick="addToCart('Surfer Kid On the Beach', 39.99)">Add to Cart</button>
+      <div class="product-description"><p>This is a detailed product description with all the features and benefits of the product.</p>
+      </div>
+      
+    </div>
+
+        
+    <!-- Example Product Listing 2 -->
+    <div class="product">
+      <img src="https://i.imgur.com/qgMoK98.jpeg" referrerpolicy="no-referrer" alt="Iconic Seaside View">
+      <h3>Iconic Seaside View</h3>
+      <p>Hand Burned Seaside Tower</p>
+      <p><strong>Price:</strong> $15.00</p>
+      <button onclick="addToCart('Iconic Seaside View', 29.99)">Add to Cart</button>
+      <div class="product-description">
+        <p>This is a detailed product description with all the features and benefits of the product.</p>
+      </div>
+      
+    </div>
+  </div>
+    
+    
+   
+    <div class="product">
+      <img src="https://i.imgur.com/HxsRKvp.jpeg" referrerpolicy="no-referrer" alt="Beauty Beyond the Dunes">
+      <h3>Beauty Beyond the Dunes</h3>
+      <p>Hand burned landscape of our rare florida dune lakes</p>
+      <p><strong>Price:</strong> $24.99</p>
+      <button onclick="addToCart('Beauty Beyond the Dunes', 29.99)">Add to Cart</button>
+      <div class="product-description">
+        <p>This is a detailed product description with all the features and benefits of the product.</p>
+      </div>
+     
+    </div>
+  </div>
+
+  <footer>
+        <p>&copy; Tribal Surf Style | Contact us at <a href="tribalsurf30a@gmail.com">tribalsurf30a@gmail.com</a></p>
+        <div class="social-media">
+            <a href="https://www.instagram.com/tribalsurf30a" target="_blank">
+                <img src="https://i.imgur.com/6QzKhtx.png" referrerpolicy="no-referrer" alt="Instagram" class="social-icon">
+            </a>
+        </div>
+    </footer>
+
+  <script src="cart.js"></script>
+  <script>
+    // View Details Button Functionality
+    document.querySelectorAll(".view-details-btn").forEach(button => {
+      button.addEventListener("click", () => {
+        const description = button.previousElementSibling;
+        description.classList.toggle("show");
+
+        // Update button text
+        button.textContent = description.classList.contains("show")
+          ? "Hide Details"
+          : "View Details";
+      });
+    });
+  </script>
+</body>
+</html>
